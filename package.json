@@ -9,7 +9,8 @@
     "compile:watch": "tsc --watch",
     "check:typescript": "tsc --noEmit --skipLibCheck --project .",
     "lint": " eslint --ext ts,tsx .",
-    "lint:fix": "eslint --ext ts,tsx . --fix"
+    "lint:fix": "eslint --ext ts,tsx . --fix",
+    "clean": "rm -rf lib/*.js ; rm -rf lib/*.d.ts ; rm -rf lib/**/*.js ; rm -rf lib/**/*.d.ts"
   },
   "dependencies": {
     "react": "16.13.1",
