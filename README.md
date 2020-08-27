@@ -1,5 +1,7 @@
 ## @segersniels/window
 
+[![Actions](https://action-badges.now.sh/segersniels/window)](https://github.com/segersniels/window/actions)[![npm](https://img.shields.io/npm/dm/@segersniels/window.svg)](https://www.npmjs.com/package/@segersniels/window)
+
 ![screenshot](./static/intro.png)
 
 ## Demo
