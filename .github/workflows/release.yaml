@@ -23,13 +23,11 @@ jobs:
       - run: yarn install
       - run: yarn check:typescript
       - run: yarn lint
-      - run: yarn compile
       - name: Persist artifact
         uses: actions/upload-artifact@v2
         with:
-          name: dist
-          path: |
-            dist
+          name: deps
+          path: node_modules
 
   release:
     runs-on: ubuntu-latest
@@ -42,8 +40,7 @@ jobs:
       - name: Grab persisted artifact
         uses: actions/download-artifact@v2
         with:
-          name: dist
-      - name: Configure registry
-        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-      - name: Release Yarn
-        run: yarn publish --access public
+          name: deps
+      - run: yarn compile
+      - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+      - run: yarn publish --access public
