@@ -7,18 +7,30 @@ import Terminal from './Terminal';
 interface Props {
   children: any;
   style?: any;
+  contentContainerStyle?: any;
   language?: string;
   light?: boolean;
   value?: string;
 }
 
 const Window = (props: Props) => {
-  const { children, style, language, light = false, value } = props;
+  const {
+    children,
+    style,
+    language,
+    light = false,
+    value,
+    contentContainerStyle,
+  } = props;
   const content = value ?? children;
 
   if (typeof content === 'string') {
     return (
-      <Terminal style={style} light={light}>
+      <Terminal
+        style={style}
+        contentContainerStyle={contentContainerStyle}
+        light={light}
+      >
         <SyntaxHighlighter style={theme} language={language}>
           {content}
         </SyntaxHighlighter>
@@ -27,7 +39,11 @@ const Window = (props: Props) => {
   }
 
   return (
-    <Terminal style={style} light={light}>
+    <Terminal
+      style={style}
+      contentContainerStyle={contentContainerStyle}
+      light={light}
+    >
       {content}
     </Terminal>
   );

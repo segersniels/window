@@ -5,14 +5,15 @@ import { Bar, Button, Container, Window, Wrapper } from './styles';
 interface Props {
   children: any;
   style?: any;
+  contentContainerStyle?: any;
   light?: boolean;
 }
 
 const Terminal = (props: Props) => {
-  const { children, style, light = false } = props;
+  const { children, style, light = false, contentContainerStyle } = props;
 
   return (
-    <Container>
+    <Container style={style}>
       <Bar light={light}>
         <Wrapper>
           <Button color="#f85955" />
@@ -21,7 +22,7 @@ const Terminal = (props: Props) => {
         </Wrapper>
       </Bar>
 
-      <Window style={style} light={light}>
+      <Window style={contentContainerStyle} light={light}>
         {children}
       </Window>
     </Container>
