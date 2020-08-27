@@ -4,9 +4,6 @@
   "description": "Syntax highlighting in a nicely framed OSX like terminal window for usage with react-markdown",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "compile": "tsc",
     "compile:watch": "tsc --watch",
