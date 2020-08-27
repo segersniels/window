@@ -23,11 +23,6 @@ jobs:
       - run: yarn install
       - run: yarn check:typescript
       - run: yarn lint
-      - name: Persist artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: deps
-          path: node_modules
 
   release:
     runs-on: ubuntu-latest
@@ -37,10 +32,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Grab persisted artifact
-        uses: actions/download-artifact@v2
+      - name: Cache target
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache
+        uses: actions/cache@v1
+        id: yarn-cache
         with:
-          name: deps
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+      - run: yarn install
       - run: yarn compile
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
       - run: yarn publish --access public
