@@ -2,7 +2,7 @@
 
 [![Actions](https://action-badges.now.sh/segersniels/window)](https://github.com/segersniels/window/actions)[![npm](https://img.shields.io/npm/dm/@segersniels/window.svg)](https://www.npmjs.com/package/@segersniels/window)
 
-![screenshot](./static/intro.png)
+![screenshot](https://i.imgur.com/Vtoq5YU.png)
 
 ## Demo
 
@@ -46,4 +46,4 @@ However you can pass your own code to the `value` prop directly and control the 
 <Window value='const foo = "bar";' language="javascript" />
 ```
 
-![custom](./static/custom.png)
+![custom](https://i.imgur.com/tFWXmrj.png)
