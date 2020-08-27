@@ -40,7 +40,7 @@ Use it independently and pass whatever `children` you want to it. Please note th
 </Window>
 ```
 
-However you can pass your own code to the `value` prop directly and control the language by passing the `language` prop.
+However you can pass your own code to the `value` prop directly and control the language by passing the `language` prop. This will override any children passed.
 
 ```js
 <Window value='const foo = "bar";' language="javascript" />
