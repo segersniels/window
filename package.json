@@ -2,8 +2,8 @@
   "name": "@segersniels/window",
   "version": "1.0.3",
   "description": "Syntax highlighting in a nicely framed OSX like terminal window for usage with react-markdown",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "compile:watch": "tsc --watch",
