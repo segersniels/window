@@ -6,7 +6,8 @@
   "author": "Niels Segers",
   "license": "MIT",
   "scripts": {
-    "compile": "tsc --watch",
+    "compile": "tsc",
+    "compile:watch": "tsc --watch",
     "check:typescript": "tsc --noEmit --skipLibCheck --project .",
     "lint": " eslint --ext ts,tsx .",
     "lint:fix": "eslint --ext ts,tsx . --fix"
