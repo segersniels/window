@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Syntax highlighting in a nicely framed OSX like terminal window for usage with react-markdown",
   "main": "dist/index.js",
-  "author": "Niels Segers",
-  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "compile": "tsc",
     "compile:watch": "tsc --watch",
@@ -32,5 +33,26 @@
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "prettier": "^2.0.4",
     "typescript": "^3.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/segersniels/window.git"
+  },
+  "keywords": [
+    "react",
+    "markdown",
+    "osx",
+    "terminal",
+    "window",
+    "ui",
+    "code",
+    "syntax",
+    "highlighting"
+  ],
+  "author": "Niels Segers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/segersniels/window/issues"
+  },
+  "homepage": "https://github.com/segersniels/window#readme"
 }
