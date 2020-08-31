@@ -6,7 +6,7 @@
 
 ## Demo
 
-You can view it in action at my [blog](https://nielssegers.be).
+You can view it in action on my [blog](https://nielssegers.be).
 
 ## Usage
 
