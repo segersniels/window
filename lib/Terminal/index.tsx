@@ -1,11 +1,12 @@
+import CSS from 'csstype';
 import React from 'react';
 
 import { Bar, Button, Container, Window, Wrapper } from './styles';
 
 interface Props {
-  children: any;
-  style?: any;
-  contentContainerStyle?: any;
+  children: React.ReactNode;
+  style?: CSS.Properties;
+  contentContainerStyle?: CSS.Properties;
   light?: boolean;
 }
 

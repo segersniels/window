@@ -1,3 +1,4 @@
+import CSS from 'csstype';
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import theme from 'react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark-reasonable';
@@ -5,9 +6,9 @@ import theme from 'react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark-r
 import Terminal from './Terminal';
 
 interface Props {
-  children: any;
-  style?: any;
-  contentContainerStyle?: any;
+  children: React.ReactNode;
+  style?: CSS.Properties;
+  contentContainerStyle?: CSS.Properties;
   language?: string;
   light?: boolean;
   value?: string;
