@@ -6,7 +6,7 @@ import theme from 'react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark-r
 import Terminal from './Terminal';
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   style?: CSS.Properties;
   contentContainerStyle?: CSS.Properties;
   language?: string;
