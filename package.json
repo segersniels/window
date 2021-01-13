@@ -1,6 +1,6 @@
 {
   "name": "@segersniels/window",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Syntax highlighting in a nicely framed OSX like terminal window for usage with react-markdown",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
