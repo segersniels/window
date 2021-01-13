@@ -16,11 +16,13 @@
     "lint:fix": "eslint --ext ts,tsx . --fix",
     "clean": "rm -rf lib/*.js ; rm -rf lib/*.d.ts ; rm -rf lib/**/*.js ; rm -rf lib/**/*.d.ts"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-syntax-highlighter": "^13.5.1",
     "styled-components": "^5.1.1"
+  },
+  "dependencies": {
+    "react-syntax-highlighter": "^13.5.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.48",
@@ -35,6 +37,9 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "prettier": "^2.0.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1",
     "typescript": "^3.8.3"
   },
   "repository": {
