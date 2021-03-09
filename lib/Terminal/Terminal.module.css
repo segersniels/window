@@ -1,0 +1,59 @@
+.light {
+  background: #E5E5E5;
+}
+
+.red {
+  background: #f85955;
+  box-shadow: 0 0 0 0.2rem #f85955;
+}
+
+.yellow {
+  background: #fbbe3f;
+  box-shadow: 0 0 0 0.2rem #fbbe3f;
+}
+
+.green {
+  background: #45cc4b;
+  box-shadow: 0 0 0 0.2rem #45cc4b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  * {
+    letter-spacing: 0;
+  }
+}
+
+.bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  height: fit-content;
+  background: rgb(40, 44, 52);
+  border-radius: 5px 5px 0 0;
+}
+
+.wrapper {
+  display: flex;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.window {
+  padding: 0 5.5px 5.5px 5.5px;
+  max-width: 100%;
+  border-radius: 0 0 5px 5px;
+  overflow: auto;
+  background: rgb(40, 44, 52);
+}

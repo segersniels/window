@@ -2,3 +2,5 @@
 .DS_Store
 /package
 segersniels-window-*
+dist
+.vscode
