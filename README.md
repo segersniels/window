@@ -46,4 +46,8 @@ However you can pass your own code to the `value` prop directly and control the 
 <Window value='const foo = "bar";' language="javascript" />
 ```
 
+### SSR
+
+Server side rendering is currently not available due to a webpack `style-loader` limitation. Feel free to create a pull request to implement this behavior.
+
 ![custom](https://i.imgur.com/tFWXmrj.png)
